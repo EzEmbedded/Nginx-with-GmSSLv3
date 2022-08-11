@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/zhaoxiaomeng/Nginx-with-GmSSLv3/actions/workflows/CI.yml/badge.svg)](https://github.com/zhaoxiaomeng/Nginx-with-GmSSLv3/actions/workflows/CI.yml)
 [![Push To Dockerhub](https://github.com/zhaoxiaomeng/Nginx-with-GmSSLv3/actions/workflows/docker-image.yml/badge.svg)](https://github.com/zhaoxiaomeng/Nginx-with-GmSSLv3/actions/workflows/docker-image.yml)
-
+## 添加arm64架构容器镜像
 ## 介绍
 
 GmSSL 3.0是GmSSL的一个大版本更新，采用了新设计的架构和API，因此无法像之前的版本兼容那些依赖OpenSSL API的应用。为了验证和证明GmSSL 3.0的可用性，有必要让GmSSL 3.0可以兼容最重要的应用类型，即HTTPS服务器。我们选择在Nginx上添加对GmSSL 3.0的支持。因此这个项目对于GmSSL 3.0有非常重要的作用。
