@@ -1,5 +1,5 @@
 #Nginx-with-GmSSLv3
-FROM FROM alpine:3.16.1 as build-nginx
+FROM alpine:3.16.1
 MAINTAINER zhaoxiaomeng
 #USER root
 #RUN DEBIAN_FRONTEND=noninteractive 
