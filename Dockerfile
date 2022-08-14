@@ -81,7 +81,7 @@ COPY --from=build-nginx /etc/nginx /etc/nginx
 
 # Add NGINX path, config and static files.
 ENV PATH "${PATH}:/usr/local/nginx/sbin"
-COPY nginx.conf /etc/nginx/nginx.conf.template
+# COPY nginx.conf /etc/nginx/nginx.conf.template
 # RUN mkdir -p /opt/data && mkdir /www
 # COPY static /www/static
 
