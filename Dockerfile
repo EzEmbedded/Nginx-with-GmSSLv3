@@ -1,5 +1,5 @@
 #Nginx-with-GmSSLv3
-FROM alpine:last as build-nginx
+FROM alpine:latest as build-nginx
 MAINTAINER zhaoxiaomeng
 #USER root
 #RUN DEBIAN_FRONTEND=noninteractive 
@@ -50,7 +50,7 @@ RUN rm -rf /var/cache/* /tmp/*
 # CMD ["/bin/sh","-c","nginx -g 'daemon off;'"]
 
 # Build the release image.
-FROM alpine:last
+FROM alpine:latest
 LABEL MAINTAINER zhaoxiaomeng
 
 # Set default ports.
