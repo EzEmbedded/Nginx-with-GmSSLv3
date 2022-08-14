@@ -22,7 +22,7 @@ RUN apk add --no-cache \
   pkgconfig \
   zlib-dev \
   cmake \
-  alpine-sdk \
+  zip
   
 
 RUN wget https://github.com/guanzhi/GmSSL/archive/refs/heads/develop.zip -O develop.zip
