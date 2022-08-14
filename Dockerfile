@@ -1,12 +1,30 @@
 #Nginx-with-GmSSLv3
-FROM ubuntu:20.04
+FROM FROM alpine:3.16.1 as build-nginx
 MAINTAINER zhaoxiaomeng
-USER root
-RUN DEBIAN_FRONTEND=noninteractive 
+#USER root
+#RUN DEBIAN_FRONTEND=noninteractive 
 
-RUN apt-get update -y
-RUN apt-get install tzdata
-RUN apt-get install libpcre3 libpcre3-dev zlib1g zlib1g-dev unzip wget cmake build-essential -yqq 
+RUN apk add --no-cache \
+  build-base \
+  ca-certificates \
+  curl \
+  gcc \
+  libc-dev \
+  libgcc \
+  linux-headers \
+  make \
+  musl-dev \
+  openssl \
+  openssl-dev \
+  pcre \
+  pcre-dev \
+  pkgconf \
+  pkgconfig \
+  zlib-dev \
+  cmake \
+  alpine-sdk \
+  
+
 RUN wget https://github.com/guanzhi/GmSSL/archive/refs/heads/develop.zip -O develop.zip
 RUN unzip develop.zip
 WORKDIR /build
