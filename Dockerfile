@@ -48,7 +48,7 @@ RUN apk add --no-cache \
   curl 
   
 COPY --from=build-env  /usr/local/nginx /usr/local/nginx
-COPY --from=build-env /etc/nginx /etc/nginx
+# COPY --from=build-env /etc/nginx /etc/nginx
 COPY ./conf/nginx_ssl.conf /usr/local/nginx/conf/nginx.conf
 
 EXPOSE 443/tcp
