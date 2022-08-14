@@ -26,8 +26,7 @@ RUN apk add --no-cache \
   
 
 RUN wget https://github.com/guanzhi/GmSSL/archive/refs/heads/develop.zip -O develop.zip
-RUN unzip develop.zip \
-    rm develop.zip
+RUN unzip develop.zip 
 WORKDIR /build
 RUN cmake /GmSSL-develop/.
 RUN make install
